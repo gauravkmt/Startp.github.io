@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" type="image/png" href="./Assets/INDEX/tissue.b798041d.png">
+    <link rel="stylesheet" href="./css/style1.css">
+    <title>Contact</title>
+    <style>
+
+.sv{background-color: #f8f9fb;padding: 10px 10px;width: 50px;height: 50px;align-items: center;border-radius: 50%;margin: 0 auto;display: flex;justify-content: center;align-items: center;}
+         .card{width: 100%;height: 100%;}
+         .card-body {flex-direction: column;justify-content: center;}
+         .card a{text-decoration: none;color: #000;}
+         .card:hover > .card-body > .sv {background-color: #44ce6f;color: #fff;}
+         .form-control {background-color: #f0f0f0;border: none;padding: 15px;}
+         .form-check-label a { text-decoration:none; color: #28a745;}
+         .btn-send-message {background-color: #28a745;color: white;padding: 10px 20px;border: none;border-radius: 5px;}
+         h1{font-size: 50px; font-family: open sans;}
+         p{font-size: 18px; font-family: open sans;}
+         h6{font-size: 25px; font-family: open sans;}
+         .sv a{font-size: 18px; font-family: open sans;}
+         .form-check-input:checked {background-color: #28a745;border-color: #28a745;}
+    </style>
+</head>
+<body>
+<!-- navbar start here -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./Assets/INDEX/logo.png" alt="logo" class="img-fluid"></a>
+      <div class="d-lg-none d-lg-flex ms-auto align-items-center">
+        <a class="nav-link cart-icon me-2" id="cardico" href="#"><i class="bi bi-cart"></i><span class="badge bg-danger">0</span></a>
+        <a class="btn2 nav-link me-2" href="login.html">Login</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">Features</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="feature.html">Features</a></li>
+                  <li><a class="dropdown-item" href="featuredetail.html">Features Details</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="service.html">Services Style </a></li>
+                  <li><a class="dropdown-item" href="servicedetail.html">Services Details</a></li>
+                </ul>
+              </li>
+              
+               
+              <li><a class="dropdown-item" href="team.html">Team</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">User</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                  <li><a class="dropdown-item" href="Forgot.html">Forgot Password</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+              <li><a class="dropdown-item" href="coming.html">Coming soon</a></li>
+              <li><a class="dropdown-item" href="404.html">404 Error Page</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+              <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bloggrid.html">Blog Grid</a></li>
+              <li><a class="dropdown-item" href="rightsidebar2.html">Blog Right Sidebar</a></li>
+              <li><a class="dropdown-item" href="bloggrid2.html">Blog Grid 2</a></li>
+              <li><a class="dropdown-item" href="rightsidebar2.html">Blog Right Sidebar 2</a></li>
+              <li><a class="dropdown-item" href="blogdetails.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item hideicon">
+            <a class="nav-link cart-icon me-2" href="#"><i class="bi bi-cart"></i><span class="badge bg-danger">0</span></a>
+          </li>
+        </ul>
+        <div class="d-lg-flex d-none align-items-center">
+          <a class="btn2 nav-link me-2" href="contact.html">Support</a>
+          <a class="btn2 nav-link" href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends here here -->
+    <div class="container" id="cont">
+        <div class="head">
+            <span>Contact Us</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-4 mb-2">
+                <div class="card">
+                    <div class="card-body text-center"> 
+                            <div class="sv">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <h6>Mail here</h6>
+                            <a href="#">admin@startp.com</a><br>
+                            <a href="#">info@startp.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-2">
+                <div class="card">
+                    <div class="card-body text-center">
+                            <div class="sv">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <h6>Visit Here</h6>
+                            <p>27 Division St, New York, NY 10002, United States of America</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-2">
+                <div class="card">
+                    <div class="card-body text-center">
+                            <div class="sv">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <h6>Call Here</h6>
+                            <a href="tel:+123 456 7890">+123 456 7890</a><br>
+                            <a href="tel:+241 452 4526">+241 452 4526</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.183613727445!2d-73.99869092427238!3d40.713974271393326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a263f3910db%3A0xd6e6cdf32a6b11b1!2s27%20Division%20St%2C%20New%20York%2C%20NY%2010002%2C%20USA!5e0!3m2!1sen!2sbd!4v1719403082511!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="text-center" id="feat">
+              <h1 class="feature__title mt-4">Get In Touch With Us</h1>
+                <div class="text-center">
+                  <div class="section-title"><div class="bar"></div></div>
+                </div>
+                <p class="mt-4 mb-3">Anything On your Mind. We’ll Be Glad To Assist You!</p>
+            </div>
+            </div>
+          </div>
+      </div>
+      <div class="container mt-3">
+        <div class="row justify-content-between">
+            <div class="col-md-5 mb-2">
+                <img src="./Assets/INDEX/contact-img.15a914b7.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-5">
+                <form action="">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your email address" required>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control mb-2" placeholder="Your phone number" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control mb-2" placeholder="Your Subject" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4" placeholder="Write your message..." required></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                        <label class="form-check-label" for="termsCheck">
+                            By checking this, you agree to our <a href="term.html">Terms</a> and <a href="privacy.html">Privacy policy</a>.
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <a href="#"><button class="btn1 mt-2 mb-5">Send Message</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 footer-col">
+              <div class="footer-logo">
+                <img src="./Assets/INDEX/logo.png" alt="Logo">
+              </div>
+              <p class="footer-text">
+                Welcome to StartP, your dedicated IT consulting partner. We specialize in tailored solutions that enhance efficiency and drive growth. Partner with us to navigate the digital landscape effectively.
+              </p>
+            </div>
+            <div class="col-md-2 footer-col">
+              <h5 class="footer-title">Company</h5>
+              <div class="footer-link">
+                 <a href="about.html">About Us</a>
+                <a href="#">Services</a>
+                <a href="feature.html">Features</a>
+                <a href="pricing.html">Our Pricing</a>
+                <a href="blogdetails.html">Latest News</a>
+              </div>
+            </div>
+            <div class="col-md-2 footer-col">
+              <h5 class="footer-title">Support</h5>
+              <div class="footer-link">
+                <a href="faq.html">FAQ's</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="term.html">Terms & Conditions</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </div>
+            <div class="col-md-4 footer-col">
+              <h5 class="footer-title">Address</h5>
+              <p>
+                27 Division St, New York, NY 10002, USA <br>
+                Email: <a href="mailto: startp@gmail.com">startp@gmail.com</a> <br>
+                  Phone:<a href="tel:+321984754"> + (321) 984 754</a>
+                </p>
+                <div class="footer-social">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://x.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom text-center">
+            Copyright © 2024 StartP. All rights reserved by StartP
+          </div>
+        </div>
+      </footer>
+      <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">
+        <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+           viewBox="0 0 32 32" xml:space="preserve">
+      <path class="st0" d="M16,4l-8.3,8.3C7.1,12.9,7.5,14,8.4,14H13v13c0,0.6,0.4,1,1,1h4c0.6,0,1-0.4,1-1V14h4.6c0.9,0,1.3-1.1,0.7-1.7
+          L16,4z"/>
+      </svg>
+      </button>
+      <script src="./script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+</body>
+</html>

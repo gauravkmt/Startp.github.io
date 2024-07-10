@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="./Assets/INDEX/tissue.b798041d.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+      #cont{position: relative;max-width: 100%;height: 400px;background: url("./Assets/INDEX/banner-bg1.jpg");background-size: cover;background-position: center;}
+      .head{position: absolute;top: 50%;left: 50%; transform: translate(-50%, -50%);}
+      .head span {font-size: 40px; font-family: 'Open Sans'; font-weight: 600;}
+    .service{background-color: #f9f6f6;}
+    .card-custom {border: none;border-radius: 0.5rem;background-color: #fff; padding: 1rem;}
+    .card-custom:hover{box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8)}
+    .card-custom-icon {border-radius: 50%;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;margin-bottom: 1rem;}
+    .card-custom-title {font-size: 1.25rem;font-weight: 600;}
+    a{color:#0e314c; transition: 0.3s color;}
+    a:hover{color: #44ce6f;}
+    </style>
+</head>
+<body>
+    <!-- navbar start here -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./Assets/INDEX/logo.png" alt="logo" class="img-fluid"></a>
+      <div class="d-lg-none d-lg-flex ms-auto align-items-center">
+        <a class="nav-link cart-icon me-2" id="cardico" href="#"><i class="bi bi-cart"></i><span class="badge bg-danger">0</span></a>
+        <a class="btn2 nav-link me-2" href="login.html">Login</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">Features</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="feature.html">Features</a></li>
+                  <li><a class="dropdown-item" href="featuredetail.html">Features Details</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="service.html">Services Style </a></li>
+                  <li><a class="dropdown-item" href="servicedetail.html">Services Details</a></li>
+                </ul>
+              </li>
+              
+               
+              <li><a class="dropdown-item" href="team.html">Team</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">User</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                  <li><a class="dropdown-item" href="Forgot.html">Forgot Password</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+              <li><a class="dropdown-item" href="coming.html">Coming soon</a></li>
+              <li><a class="dropdown-item" href="404.html">404 Error Page</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+              <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bloggrid.html">Blog Grid</a></li>
+              <li><a class="dropdown-item" href="rightsidebar.html">Blog Right Sidebar</a></li>
+              <li><a class="dropdown-item" href="bloggrid2.html">Blog Grid 2</a></li>
+              <li><a class="dropdown-item" href="rightsidebar2.html">Blog Right Sidebar 2</a></li>
+              <li><a class="dropdown-item" href="blogdetails.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item hideicon">
+            <a class="nav-link cart-icon me-2" href="#"><i class="bi bi-cart"></i><span class="badge bg-danger">0</span></a>
+          </li>
+        </ul>
+        <div class="d-lg-flex d-none align-items-center">
+          <a class="btn2 nav-link me-2" href="contact.html">Support</a>
+          <a class="btn2 nav-link" href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends here here -->
+  <div class="container" id="cont">
+    <div class="head">
+        <span>Services Style</span>
+    </div>
+  </div>
+  <section class="service">
+    <div class="container">
+      <div class="row">
+        <div class="text-center">
+            <h1 class="mt-4">Our Services</h1>
+            <div class="section-title"><div class="bar"></div></div>
+            <p>To help with crafting the content for your "Our Services" section, could you please provide<br> more details about the services your IT consultancy offers? This will allow<br> me to tailor the descriptions effectively.</p>
+        </div></div>
+        <div class="row">
+            <div class="col-lg-4 mt-2 mb-2">
+                <div class="card-custom" id="fe1">
+                    <div class="card-custom-icon" id="fecol1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    </div>
+                    <div class="card-custom-title"><a href="servicedetail.html" class="text-decoration-none">Incredible Infrastructure</a></div>
+                    <p class="card-text">
+                        Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                    </p>
+                  </div>
+            </div>
+            <div class="col-lg-4 mt-2 mb-2">
+                <div class="card-custom" id="fe1">
+                    <div class="card-custom-icon" id="fecol1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <div class="card-custom-title"><a href="servicedetail.html" class="text-decoration-none">Email Notifications</a></div>
+                    <p class="card-text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                    </p>
+                  </div>
+            </div>
+            <div class="col-lg-4 mt-2 mb-2">
+                <div class="card-custom" id="fe1">
+                    <div class="card-custom-icon" id="fecol1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    </div>
+                    <div class="card-custom-title"><a href="servicedetail.html" class="text-decoration-none">Best Analytics Audits</a></div>
+                    <p class="card-text">
+                        Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                    </p>
+                  </div>
+            </div>
+            <div class="col-lg-4 mt-2 mb-2">
+                <div class="card-custom" id="fe3">
+                    <div class="card-custom-icon" id="fecol3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    </div>
+                    <div class="card-custom-title"><a href="servicedetail.html" class="text-decoration-none">Simple Dashboard</a></div>
+                    <p class="card-text">
+                        Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                    </p>
+                  </div>
+            </div>
+            <div class="col-lg-4 mt-2 mb-2">
+                <div class="card-custom" id="fe3">
+                    <div class="card-custom-icon" id="fecol3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    </div>
+                    <div class="card-custom-title"><a href="servicedetail.html" class="text-decoration-none">Information Retrieval</a></div>
+                    <p class="card-text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                    </p>
+                  </div>
+            </div>
+            <div class="col-lg-4 mt-2 mb-2">
+                <div class="card-custom" id="fe3">
+                    <div class="card-custom-icon" id="fecol3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line></svg>
+                    </div>
+                    <div class="card-custom-title"><a href="servicedetail.html" class="text-decoration-none">Deep Technical SEO</a></div>
+                    <p class="card-text">
+                        Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                    </p>
+                  </div>
+            </div>
+            <div class="col-lg-4 mt-2 mb-2">
+                <div class="card-custom" id="fe5">
+                    <div class="card-custom-icon" id="fecol5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path><path d="M13 13l6 6"></path></svg>
+                    </div>
+                    <div class="card-custom-title"><a href="servicedetail.html" class="text-decoration-none">Drag & Drop Functionality</a></div>
+                    <p class="card-text">
+                        Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                    </p>
+                  </div>
+            </div>
+            <div class="col-lg-4 mt-2 mb-2">
+                <div class="card-custom" id="fe5">
+                    <div class="card-custom-icon" id="fecol5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    </div>
+                    <div class="card-custom-title"><a href="servicedetail.html" class="text-decoration-none">Deadline Reminders</a></div>
+                    <p class="card-text">Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                    </p>
+                  </div>
+            </div>
+            <div class="col-lg-4 mt-2 mb-5">
+                <div class="card-custom" id="fe5">
+                    <div class="card-custom-icon" id="fecol5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </div>
+                    <div class="card-custom-title"><a href="servicedetail.html" class="text-decoration-none">Modern Keyword Analysis</a></div>
+                    <p class="card-text">
+                        Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                    </p>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer-logo">
+            <img src="./Assets/INDEX/logo.png" alt="Logo">
+          </div>
+          <p class="footer-text">
+            Welcome to StartP, your dedicated IT consulting partner. We specialize in tailored solutions that enhance efficiency and drive growth. Partner with us to navigate the digital landscape effectively.
+          </p>
+        </div>
+        <div class="col-md-2 footer-col">
+          <h5 class="footer-title">Company</h5>
+          <div class="footer-link">
+             <a href="about.html">About Us</a>
+            <a href="#">Services</a>
+            <a href="feature.html">Features</a>
+            <a href="pricing.html">Our Pricing</a>
+            <a href="blogdetails.html">Latest News</a>
+          </div>
+        </div>
+        <div class="col-md-2 footer-col">
+          <h5 class="footer-title">Support</h5>
+          <div class="footer-link">
+            <a href="faq.html">FAQ's</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="term.html">Terms & Conditions</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h5 class="footer-title">Address</h5>
+          <p>
+            27 Division St, New York, NY 10002, USA <br>
+            Email: <a href="mailto: startp@gmail.com">startp@gmail.com</a> <br>
+              Phone:<a href="tel:+321984754"> + (321) 984 754</a>
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://x.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        Copyright © 2024 StartP. All rights reserved by StartP
+      </div>
+    </div>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">
+    <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+       viewBox="0 0 32 32" xml:space="preserve">
+  <path class="st0" d="M16,4l-8.3,8.3C7.1,12.9,7.5,14,8.4,14H13v13c0,0.6,0.4,1,1,1h4c0.6,0,1-0.4,1-1V14h4.6c0.9,0,1.3-1.1,0.7-1.7
+      L16,4z"/>
+  </svg>
+  </button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./script/script.js"></script>
+</body>
+</html>

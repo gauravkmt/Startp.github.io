@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./Assets/INDEX/tissue.b798041d.png">
+    <link rel="stylesheet" href="./css/style1.css">
+    <title>Price</title>
+    <style>
+.pricing-table, .pricing-table .pricing-header {background: #fff;transition: .5s;margin-bottom: 30px;}
+.pricing-table {text-align: center;box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .06);border-radius: 5px;padding-bottom: 35px;}
+ul{list-style: none;}
+.pricing-table{padding-bottom:30px}
+.pricing-table .pricing-header h3{font-size:17px}
+.pricing-table .price{margin-bottom:25px}.pricing-table .price span{font-size:27px}
+.pricing-table,.pricing-table .pricing-header{background:#fff;transition:.5s;margin-bottom:30px}.pricing-table .pricing-header{position:relative;padding:30px 20px;border-radius:5px 5px 0 0;border-bottom:1px solid #eee;z-index:1}.pricing-table .pricing-header:before{content:"";position:absolute;left:0;top:0;width:100%;height:100%;border-radius:5px 5px 0 0;background:linear-gradient(135deg,#23bdb8,#43e794);opacity:0;visibility:hidden;transition:.5s;z-index:-1}.pricing-table .pricing-header h3{font-size:18px;text-transform:uppercase;transition:.5s;margin-bottom:0}.pricing-table .price{margin-bottom:15px}.pricing-table .price span{color:#44ce6f;font-size:30px;font-weight:600}.pricing-table .price span sup{font-weight:500}.pricing-table .price span span{font-size:14px;font-weight:500}.pricing-table .pricing-features ul{padding:0;list-style-type:none;margin-bottom:30px}.pricing-table .pricing-features ul li{color:#b5b5b5;margin-bottom:12px;text-decoration:line-through}.pricing-table .pricing-features ul li:last-child{margin-bottom:0}.pricing-table .pricing-features ul li.active{color:#6084a4;text-decoration:none}.pricing-table:hover .pricing-header:before{opacity:1;visibility:visible}.pricing-table:hover .pricing-header h3{color:#fff}.pricing-table.active-plan .pricing-header:before{opacity:1;visibility:visible}.pricing-table.active-plan .pricing-header h3{color:#fff}.pricing-table.active-plan 
+.btn-primary{background:#c679e3;box-shadow:0 13px 27px 0 rgba(198,121,227,.25)}
+.pricing-table.active-plan .btn-primary:after,.pricing-table.active-plan .btn-primary:before{background:#44ce6f;box-shadow:0 13px 27px 0 rgba(68,206,111,.25)}
+.pricing-footer button {font-size: 18px;letter-spacing: 2px;text-transform: uppercase;display: inline-block;text-align: center;font-family: open sans;padding: 0.7em 2em;border: none; border-radius: 2px;position: relative;color: #44ce6f;text-decoration: none;transition: 0.3s ease all;z-index: 1;}
+.pricing-footer button:before {transition: 0.5s all ease;position: absolute;top: 0;left: 50%;right: 50%;bottom: 0;opacity: 0;content: '';background-color: #c679e3;z-index: -1;}
+.pricing-footer button:hover, .pricing-footer button:focus {color: white;}
+.pricing-footer button:hover:before, .pricing-footer button:focus:before {transition: 0.5s all ease;left: 0;right: 0;opacity: 1;}
+.pricing-footer button:active {transform: scale(0.9);}
+.section-title{text-align:center;margin-bottom:50px}
+.bar{height:5px;width:90px;background:#cdf1d8;margin:20px auto;position:relative;border-radius:30px}.section-title .bar:before{content:"";position:absolute;left:0;top:-2.7px;height:10px;width:10px;border-radius:50%;background:#44ce6f;animation-duration:3s;animation-timing-function:linear;animation-iteration-count:infinite;animation-name:MOVE-BG}
+.single-pricing-table{text-align:center;background:#fff;box-shadow:0 1px 20px 0 rgba(0,0,0,.06);border-radius:5px;padding:35px;transition:.5s;margin-bottom:30px}.single-pricing-table .pricing-header i{transition:.5s}.single-pricing-table .pricing-header i:before{font-size:45px}.single-pricing-table .pricing-header h3{font-size:18px;font-weight:500;text-transform:uppercase;margin:15px 0 20px}.single-pricing-table .price{margin-bottom:20px}.single-pricing-table .price span{color:#44ce6f;font-size:30px;font-weight:600}.single-pricing-table .price span sup{font-weight:500}.single-pricing-table .price span span{font-size:14px;font-weight:500}.single-pricing-table .pricing-features ul{padding:0;margin:0 0 30px;list-style-type:none}.single-pricing-table .pricing-features ul li{color:#6084a4;margin-bottom:12px}.single-pricing-table .pricing-features ul li:last-child{margin-bottom:0}.single-pricing-table .pricing-features ul li svg{width:15px}
+@keyframes MOVE-BG{0%{transform:translateX(0)}to{transform:translateX(88px)}}
+.pricing-header img{width: 100px; height: 100px; overflow: hidden;}
+    </style>
+</head>
+<body>
+    <!-- navbar start here -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./Assets/INDEX/logo.png" alt="logo" class="img-fluid"></a>
+      <div class="d-lg-none d-lg-flex ms-auto align-items-center">
+        <a class="nav-link cart-icon me-2" id="cardico" href="#"><i class="bi bi-cart"></i><span class="badge bg-danger">0</span></a>
+        <a class="btn2 nav-link me-2" href="login.html">Login</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">Features</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="feature.html">Features</a></li>
+                  <li><a class="dropdown-item" href="featuredetail.html">Features Details</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="service.html">Services Style</a></li>
+                  <li><a class="dropdown-item" href="servicedetail.html">Services Details</a></li>
+                </ul>
+              </li>
+              
+               
+              <li><a class="dropdown-item" href="team.html">Team</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">User</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                  <li><a class="dropdown-item" href="Forgot.html">Forgot Password</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+              <li><a class="dropdown-item" href="coming.html">Coming soon</a></li>
+              <li><a class="dropdown-item" href="404.html">404 Error Page</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+              <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bloggrid.html">Blog Grid</a></li>
+              <li><a class="dropdown-item" href="rightsidebar.html">Blog Right Sidebar</a></li>
+              <li><a class="dropdown-item" href="bloggrid2.html">Blog Grid 2</a></li>
+              <li><a class="dropdown-item" href="rightsidebar2.html">Blog Right Sidebar 2</a></li>
+              <li><a class="dropdown-item" href="blogdetails.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item hideicon">
+            <a class="nav-link cart-icon me-2" href="#"><i class="bi bi-cart"></i><span class="badge bg-danger">0</span></a>
+          </li>
+        </ul>
+        <div class="d-lg-flex d-none align-items-center">
+          <a class="btn2 nav-link me-2" href="contact.html">Support</a>
+          <a class="btn2 nav-link" href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends here here -->
+  
+  <div class="container" id="cont">
+    <div class="head">
+        <span>Price</span>
+    </div>
+  </div>
+
+<section class="price">
+    <div class="container mt-4 mb-4">
+        <div class="section-title">
+            <h1>Pricing Plans</h1>
+            <div class="bar"></div>
+            <p class="text-center">Flexible and affordable options designed to meet various business needs,<br> offering transparent costs, scalability, and exceptional value.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-5">
+                <div class="pricing-table">
+                    <div class="pricing-header">
+                        <h3>Basic Plan</h3>
+                    </div>
+                    <div class="price">
+                        <span><sup>$</sup>15.00 <span>/Mon</span></span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li class="active">5 GB Bandwidth</li>
+                            <li class="active">Highest Speed</li>
+                            <li class="active">1 GB Storage</li>
+                            <li class="active">Unlimited Website</li>
+                            <li class="active">Unlimited Users</li>
+                            <li class="active">24x7 Great Support</li>
+                            <li>Data Security and Backups</li>
+                            <li>Monthly Reports and Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer"><a href="#"><button class="mt-2">SELECT PLAN</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-4">
+                <div class="pricing-table active-plan">
+                    <div class="pricing-header">
+                        <h3>Advanced Plan</h3>
+                    </div>
+                    <div class="price">
+                        <span><sup>$</sup>35.00 <span>/Mon</span></span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li class="active">10 GB Bandwidth</li>
+                            <li class="active">Highest Speed</li>
+                            <li class="active">3 GB Storage</li>
+                            <li class="active">Unlimited Website</li>
+                            <li class="active">Unlimited Users</li>
+                            <li class="active">24x7 Great Support</li>
+                            <li class="active">Data Security and Backups</li>
+                            <li>Monthly Reports and Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer"><a href="#"><button class="mt-2">SELECT PLAN</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-4">
+                <div class="pricing-table">
+                    <div class="pricing-header">
+                        <h3>Expert Plan</h3>
+                    </div>
+                    <div class="price">
+                        <span><sup>$</sup>65.00 <span>/Mon</span></span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li class="active">15 GB Bandwidth</li>
+                            <li class="active">Highest Speed</li>
+                            <li class="active">5 GB Storage</li>
+                            <li class="active">Unlimited Website</li>
+                            <li class="active">Unlimited Users</li>
+                            <li class="active">24x7 Great Support</li>
+                            <li class="active">Data Security and Backups</li>
+                            <li class="active">Monthly Reports and Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#"><button class="mt-2">SELECT PLAN</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="container">
+    <div class="section-title">
+        <h1>Pricing Plans</h1>
+        <div class="bar"></div>
+        <p class="text-center">Flexible and affordable options designed to meet various business needs,<br> offering transparent costs, scalability, and exceptional value.</p>
+      </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-once="true">
+            <div class="single-pricing-table">
+                <div class="pricing-header">
+                    <img src="./Assets/INDEX/database.png" alt="" class="img-fluid">
+                    <h3>Web Hosting</h3>
+                </div>
+                <div class="price">
+                    <span><sup>$</sup>10.99<span>/m</span></span>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li>
+                            <i data-feather="check"></i> 99.9% Uptime Guarantee</li>
+                            <li><i data-feather="check"></i> Reliable &amp; Secure</li>
+                            <li><i data-feather="check"></i> Powered by cPanel / Plesk</li>
+                            <li><i data-feather="check"></i> Web Asset Delivery</li>
+                            <li><i data-feather="check"></i> 24/7 Dedicated Support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#"><button class="mt-2">SELECT PLAN</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" data-aos-once="true">
+                <div class="single-pricing-table active-plan">
+                    <div class="pricing-header">
+                        <img src="./Assets/INDEX/server.png" alt="" class="img-fluid">
+                        <h3>Cloud Hosting</h3>
+                    </div>
+                    <div class="price">
+                        <span><sup>$</sup>13.99<span>/m</span></span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul><li><i data-feather="check"></i> 99.9% Uptime Guarantee</li><li><i data-feather="check"></i> Reliable &amp; Secure</li><li><i data-feather="check"></i> Powered by cPanel / Plesk</li><li><i data-feather="check"></i> Web Asset Delivery</li><li><i data-feather="check"></i> 24/7 Dedicated Support</li></ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#"><button class="mt-2">SELECT PLAN</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-once="true">
+                <div class="single-pricing-table">
+                    <div class="pricing-header">
+                        <img src="./Assets/INDEX/vps.png" alt="" class="img-fluid">
+                        <h3>Vps Hosting</h3>
+                    </div>
+                    <div class="price">
+                        <span><sup>$</sup>15.99<span>/m</span></span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul><li><i data-feather="check"></i> 99.9% Uptime Guarantee</li><li><i data-feather="check"></i> Reliable &amp; Secure</li><li><i data-feather="check"></i> Powered by cPanel / Plesk</li><li><i data-feather="check"></i> Web Asset Delivery</li><li><i data-feather="check"></i> 24/7 Dedicated Support</li></ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#"><button class="mt-2">SELECT PLAN</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer-logo">
+            <img src="./Assets/INDEX/logo.png" alt="Logo">
+          </div>
+          <p class="footer-text">
+            Welcome to StartP, your dedicated IT consulting partner. We specialize in tailored solutions that enhance efficiency and drive growth. Partner with us to navigate the digital landscape effectively.
+          </p>
+        </div>
+        <div class="col-md-2 footer-col">
+          <h5 class="footer-title">Company</h5>
+          <div class="footer-link">
+             <a href="about.html">About Us</a>
+            <a href="#">Services</a>
+            <a href="feature.html">Features</a>
+          <a href="pricing.html">Our Pricing</a>
+          <a href="blogdetails.html">Latest News</a>
+        </div>
+      </div>
+      <div class="col-md-2 footer-col">
+        <h5 class="footer-title">Support</h5>
+        <div class="footer-link">
+          <a href="faq.html">FAQ's</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="term.html">Terms & Conditions</a>
+          <a href="team.html">Team</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="col-md-4 footer-col">
+        <h5 class="footer-title">Address</h5>
+        <p>
+          27 Division St, New York, NY 10002, USA <br>
+          Email: <a href="mailto: startp@gmail.com">startp@gmail.com</a> <br>
+            Phone:<a href="tel:+321984754"> + (321) 984 754</a>
+          </p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        Copyright © 2024 StartP. All rights reserved by StartP
+      </div>
+    </div>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">
+    <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+       viewBox="0 0 32 32" xml:space="preserve">
+  <path class="st0" d="M16,4l-8.3,8.3C7.1,12.9,7.5,14,8.4,14H13v13c0,0.6,0.4,1,1,1h4c0.6,0,1-0.4,1-1V14h4.6c0.9,0,1.3-1.1,0.7-1.7
+      L16,4z"/>
+  </svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="./script/script.js"></script>
+</body>
+</html>

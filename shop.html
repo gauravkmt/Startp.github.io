@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="./Assets/INDEX/tissue.b798041d.png">
+    <link rel="stylesheet" href="./css/style1.css">
+    <title>Shop</title>
+</head>
+<body>
+   <!-- navbar start here -->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./Assets/INDEX/logo.png" alt="logo" class="img-fluid"></a>
+      <div class="d-lg-none d-lg-flex ms-auto align-items-center">
+        <a class="nav-link cart-icon me-2" id="cardico" href="#"><i class="bi bi-cart"></i><span class="badge bg-danger">0</span></a>
+        <a class="btn2 nav-link me-2" href="login.html">Login</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">Features</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="feature.html">Features</a></li>
+                  <li><a class="dropdown-item" href="featuredetail.html">Features Details</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="service.html">Services Style </a></li>
+                  <li><a class="dropdown-item" href="servicedetail.html">Services Details</a></li>
+                </ul>
+              </li>
+              
+               
+              <li><a class="dropdown-item" href="team.html">Team</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">User</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                  <li><a class="dropdown-item" href="Forgot.html">Forgot Password</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+              <li><a class="dropdown-item" href="coming.html">Coming soon</a></li>
+              <li><a class="dropdown-item" href="404.html">404 Error Page</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+              <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bloggrid.html">Blog Grid</a></li>
+              <li><a class="dropdown-item" href="rightsidebar.html">Blog Right Sidebar</a></li>
+              <li><a class="dropdown-item" href="bloggrid2.html">Blog Grid 2</a></li>
+              <li><a class="dropdown-item" href="rightsidebar2.html">Blog Right Sidebar 2</a></li>
+              <li><a class="dropdown-item" href="blogdetails.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item hideicon">
+            <a class="nav-link cart-icon me-2" href="#"><i class="bi bi-cart"></i><span class="badge bg-danger">0</span></a>
+          </li>
+        </ul>
+        <div class="d-lg-flex d-none align-items-center">
+          <a class="btn2 nav-link me-2" href="contact.html">Support</a>
+          <a class="btn2 nav-link" href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends here here -->
+  <div class="container" id="cont">
+    <div class="head">
+        <span>Products</span>
+    </div>
+  </div> 
+  <section class="shop">
+  <div class="container mt-3 bg-body-tertiary">
+    <div class="row justify-content-between align-items-center">
+      <div class="col mt-2">
+        <p>Showing 1-8 of 14 results</p>
+      </div>
+      <div class="col-auto">
+        <div class="dropdown custom-dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Sort by Popularity
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Sort by Popularity</a></li>
+            <li><a class="dropdown-item" href="#">Sort by Average Rating</a></li>
+            <li><a class="dropdown-item" href="#">Sort by Latest</a></li>
+            <li><a class="dropdown-item" href="#">Sort by price: Low to High</a></li>
+            <li><a class="dropdown-item" href="#">Sort by price: High to Low</a></li>
+            <li><a class="dropdown-item" href="#">Sort by New</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2">
+        <div class="card">
+          <div class="position-relative">
+            <img src="./Assets/INDEX/shop-image1.jpg" class="card-img-top" alt="Wood Pencil">
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+              <div class="d-flex p-2 rounded">
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-search"></i></a></div>
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-heart"></i></a></div>
+                <div class="link"><a href="pencil.html" class="text-dark mx-1"><i class="bi bi-link"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title"><a href="pencil.html">Wood Pencil</a></h5>
+            <p class="card-text">$19.99</p>
+            <p class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            </p>
+            <a href="#" class="btn w-100">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-2 mb-2">
+        <div class="card">
+          <div class="position-relative">
+            <img src="./Assets/INDEX/shop-image2.jpg" class="card-img-top" alt="Wood Pencil">
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+              <div class="d-flex p-2 rounded">
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-search"></i></a></div>
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-heart"></i></a></div>
+                <div class="link"><a href="tshirt.html" class="text-dark mx-1"><i class="bi bi-link"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title"><a href="tshirt.html">T-Shirt</a></h5>
+            <p class="card-text">$22.99</p>
+            <p class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            </p>
+            <a href="#" class="btn w-100">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-2 mb-2">
+        <div class="card">
+          <div class="position-relative">
+            <img src="./Assets/INDEX/shop-image3.jpg" class="card-img-top" alt="Wood Pencil">
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+              <div class="d-flex p-2 rounded">
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-search"></i></a></div>
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-heart"></i></a></div>
+                <div class="link"><a href="shoe.html" class="text-dark mx-1"><i class="bi bi-link"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title"><a href="shoe.html">Casual Shoe</a></h5>
+            <p class="card-text">$31.99</p>
+            <p class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            </p>
+            <a href="#" class="btn w-100">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-2 mb-2">
+        <div class="card">
+          <div class="position-relative">
+            <img src="./Assets/INDEX/shop-image4.jpg" class="card-img-top" alt="Wood Pencil">
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+              <div class="d-flex p-2 rounded">
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-search"></i></a></div>
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-heart"></i></a></div>
+                <div class="link"><a href="coffee.html" class="text-dark mx-1"><i class="bi bi-link"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title"><a href="coffee.html">Coffee Bag</a></h5>
+            <p class="card-text">$4.99</p>
+            <p class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            </p>
+            <a href="#" class="btn w-100">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-2 mb-2">
+        <div class="card">
+          <div class="position-relative">
+            <img src="./Assets/INDEX/shop-image5.jpg" class="card-img-top" alt="Wood Pencil">
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+              <div class="d-flex p-2 rounded">
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-search"></i></a></div>
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-heart"></i></a></div>
+                <div class="link"><a href="chair.html" class="text-dark mx-1"><i class="bi bi-link"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title"><a href="chair.html">Single Chair</a></h5>
+            <p class="card-text">$149.99</p>
+            <p class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            </p>
+            <a href="#" class="btn w-100">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-2 mb-2">
+        <div class="card">
+          <div class="position-relative">
+            <img src="./Assets/INDEX/shop-image6.jpg" class="card-img-top" alt="Wood Pencil">
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+              <div class="d-flex p-2 rounded">
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-search"></i></a></div>
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-heart"></i></a></div>
+                <div class="link"><a href="businesscard.html" class="text-dark mx-1"><i class="bi bi-link"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title"><a href="businesscard.html">Business Card</a></h5>
+            <p class="card-text">$1.99</p>
+            <p class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            </p>
+            <a href="#" class="btn w-100">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-2 mb-2">
+        <div class="card">
+          <div class="position-relative">
+            <img src="./Assets/INDEX/shop-image7.jpg" class="card-img-top" alt="Wood Pencil">
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+              <div class="d-flex p-2 rounded">
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-search"></i></a></div>
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-heart"></i></a></div>
+                <div class="link"><a href="bookcover.html" class="text-dark mx-1"><i class="bi bi-link"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title"><a href="bookcover.html">Book Cover</a></h5>
+            <p class="card-text">$3.99</p>
+            <p class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            </p>
+            <a href="#" class="btn w-100">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-2 mb-2">
+        <div class="card">
+          <div class="position-relative">
+            <img src="./Assets/INDEX/shop-image8.jpg" class="card-img-top" alt="Wood Pencil">
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+              <div class="d-flex p-2 rounded">
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-search"></i></a></div>
+                <div class="link"><a href="#" class="text-dark mx-1"><i class="bi bi-heart"></i></a></div>
+                <div class="link"><a href="wallwatch.html" class="text-dark mx-1"><i class="bi bi-link"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title"><a href="wallwatch.html">Wall Watch</a></h5>
+            <p class="card-text">$9.99</p>
+            <p class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            </p>
+            <a href="#" class="btn w-100">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer-logo">
+            <img src="./Assets/INDEX/logo.png" alt="Logo">
+          </div>
+          <p class="footer-text">
+            Welcome to StartP, your dedicated IT consulting partner. We specialize in tailored solutions that enhance efficiency and drive growth. Partner with us to navigate the digital landscape effectively.
+          </p>
+        </div>
+        <div class="col-md-2 footer-col">
+          <h5 class="footer-title">Company</h5>
+          <div class="footer-link">
+             <a href="about.html">About Us</a>
+            <a href="#">Services</a>
+            <a href="feature.html">Features</a>
+            <a href="pricing.html">Our Pricing</a>
+            <a href="blogdetails.html">Latest News</a>
+          </div>
+        </div>
+        <div class="col-md-2 footer-col">
+          <h5 class="footer-title">Support</h5>
+          <div class="footer-link">
+            <a href="faq.html">FAQ's</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="term.html">Terms & Conditions</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h5 class="footer-title">Address</h5>
+          <p>
+            27 Division St, New York, NY 10002, USA <br>
+            Email: <a href="mailto: startp@gmail.com">startp@gmail.com</a> <br>
+              Phone:<a href="tel:+321984754"> + (321) 984 754</a>
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://x.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        Copyright © 2024 StartP. All rights reserved by StartP
+      </div>
+    </div>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">
+    <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+       viewBox="0 0 32 32" xml:space="preserve">
+  <path class="st0" d="M16,4l-8.3,8.3C7.1,12.9,7.5,14,8.4,14H13v13c0,0.6,0.4,1,1,1h4c0.6,0,1-0.4,1-1V14h4.6c0.9,0,1.3-1.1,0.7-1.7
+      L16,4z"/>
+  </svg>
+  </button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./script/script.js"></script>
+</body>
+</html>

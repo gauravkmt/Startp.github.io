@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+   <link rel="icon" type="image/png" href="./Assets/INDEX/tissue.b798041d.png">
+   <link rel="stylesheet" href="css/style1.css">
+    <title>Feature</title>
+    <style>
+/*hosting section css start here*/
+
+.makr{margin-bottom: 0;line-height: 20px;margin-left: 1%;}
+.hosting-section{background-color: #f7fafd;min-height: 550px;}
+.hosting-section h5{font-size: 50px;font-family: open sans;}
+.hosting-section p{font-size: 18px;font-family: open sans;align-items: center;color:#b5b5b5;}
+.makr{margin-bottom: 0;line-height: 20px;margin-left: 1%;}
+/*hosting section css ends here*/
+/*design section start here*/
+.design h5{font-size: 50px;font-family: open sans;}
+.design p{font-size: 18px;font-family: open sans;color:#b5b5b5;}
+#hhhhh{display: none;}
+@media (max-width:1000px) {#hhhhh{display: block;}}
+#hhhhhhhhhh{display: block;}
+@media (max-width: 1001px) {#hhhhhhhhhh {display: none;}}
+.design{min-height: 540px;}
+.rotating-container {position: relative;width: auto;height: 400px;display: flex;justify-content: center;align-items: center;}
+.rotating-image{display: block;}
+@media (max-width: 1024px) {.rotating-image {display: none;}} 
+@media (max-height:992px) { .rotating-image{display: block; position: absolute;object-fit: contain;animation: rotate 8s linear infinite;}}
+.inner-container {position: absolute;display: flex;justify-content: center; align-items: center;z-index: 1;}
+.static-image { max-width: 100%; height: 100%;}
+@keyframes rotate {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
+#shadow {box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);padding: 10px 15px;}
+#shadow svg {color: #46cf71;}
+#shadow:hover{background: linear-gradient(135deg, #28a745, #98ecac);color:white;}
+#shadow:hover p{color: #ffffff;}
+#shadow:hover svg{color: #ffffff;}
+/*design section ends here*/
+/*feature section start here*/
+.icon-circle {width: 50px;height: 50px;border-radius: 50%;display: flex;align-items: center;justify-content: center;}
+#fecol1 {background-color: rgb(205, 241, 216); }
+#fecol1 svg{color: rgb(68, 206, 111);}
+#fecol3 {background-color: rgb(237, 195, 252); }
+#fecol3 svg{color: rgb(198, 121, 227);}
+#fecol5 {background-color: rgb(249, 210, 196); }
+#fecol5 svg{color: rgb(235, 107, 61);}
+#fe1:hover #fecol1 {background-color: rgb(68, 206, 111);}
+#fe1:hover #fecol1 svg {color: white;}
+#fe3:hover #fecol3 {background-color: rgb(198, 121, 227);}
+#fe3:hover #fecol3 svg {color: white;}
+#fe5:hover #fecol5 {background-color: rgb(235, 107, 61);}
+#fe5:hover #fecol5 svg {color: white;}
+.feature .col-md-5{background-color: #ffffff;padding: 20px 40px; transition: 0.5s ease;box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);}
+.feature p{font-size: 18px;font-family: open sans;color: #b5b5b5;}
+.flex-column a{color: #0e314c; text-decoration: none; transition: 0.2s ease;}
+.flex-column a:hover{color: #44ce6f;}
+.feature h5{font-size: 50px;font-family: open sans;}
+/*feature section ends here*/
+    </style>
+</head>
+<body>
+            <!-- navbar start here -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./Assets/INDEX/logo.png" alt="logo" class="img-fluid"></a>
+      <div class="d-lg-none d-lg-flex ms-auto align-items-center">
+        <a class="nav-link cart-icon me-2" id="cardico" href="#"><i class="bi bi-cart"></i><span class="badge bg-danger">0</span></a>
+        <a class="btn2 nav-link me-2" href="login.html">Login</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">Features</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="feature.html">Features</a></li>
+                  <li><a class="dropdown-item" href="featuredetail.html">Features Details</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="service.html">Services Style 1</a></li>
+                  <li><a class="dropdown-item" href="servicedetail.html">Services Details</a></li>
+                </ul>
+              </li>
+              
+               
+              <li><a class="dropdown-item" href="team.html">Team</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">User</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                  <li><a class="dropdown-item" href="Forgot.html">Forgot Password</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+              <li><a class="dropdown-item" href="coming.html">Coming soon</a></li>
+              <li><a class="dropdown-item" href="404.html">404 Error Page</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+              <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bloggrid.html">Blog Grid</a></li>
+              <li><a class="dropdown-item" href="rightsidebar.html">Blog Right Sidebar</a></li>
+              <li><a class="dropdown-item" href="bloggrid2.html">Blog Grid 2</a></li>
+              <li><a class="dropdown-item" href="rightsidebar2.html">Blog Right Sidebar 2</a></li>
+              <li><a class="dropdown-item" href="blogdetails.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item hideicon">
+            <a class="nav-link cart-icon me-2" href="#"><i class="bi bi-cart"></i><span class="badge bg-danger">0</span></a>
+          </li>
+        </ul>
+        <div class="d-lg-flex d-none align-items-center">
+          <a class="btn2 nav-link me-2" href="contact.html">Support</a>
+          <a class="btn2 nav-link" href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends here here -->  
+  <div class="container" id="cont">
+    <div class="head">
+        <span>Features</span>
+    </div>
+  </div>
+  <section class="feature mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="text-center" id="feat">
+            <h1 class="mt-4">Our Features</h1>
+            <div class="section-title"><div class="bar"></div></div>
+              <p class="mt-4 mb-3">Explore our features designed to elevate your business: security, performance,<br> user experience, and seamless integration for optimal efficiency.</p>
+          </div>
+          </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+      <!-- First Row -->
+      <div class="row justify-content-around">
+        <div class="col-md-5 mb-4" id="fe1">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <div class="icon-circle" id="fecol1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex flex-column">
+                <a href="featuredetail.html"><h4 class="mb-0">Incredible Infrastructure</h4></a>
+                <p class="mb-0">Build on a foundation of incredible infrastructure designed for reliability, scalability, and performance, ensuring your business operates smoothly and efficiently.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 mb-4" id="fe1">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <div class="icon-circle" id="fecol1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex flex-column">
+                <a href="featuredetail.html"><h4 class="mb-0">Email Notifications</h4></a>
+                <p class="mb-0">Stay informed with real-time email notifications, ensuring you never miss important updates and alerts for your business operations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second Row -->
+      <div class="row justify-content-around">
+        <div class="col-md-5 mb-4" id="fe3">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <div class="icon-circle" id="fecol3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex flex-column">
+                <a href="featuredetail.html"><h4 class="mb-0">Simple Dashboard</h4></a>
+                <p class="mb-0">Manage your operations effortlessly with a simple dashboard that provides intuitive controls and clear insights at a glance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 mb-4" id="fe3">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <div class="icon-circle" id="fecol3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex flex-column">
+                <a href="featuredetail.html"><h4 class="mb-0">Information Retrieval</h4></a>
+                <p class="mb-0">Access and retrieve crucial information quickly with advanced search and retrieval systems designed for efficiency and accuracy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Third Row -->
+      <div class="row justify-content-around">
+        <div class="col-md-5 mb-4" id="fe5">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <div class="icon-circle" id="fecol5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex flex-column">
+                <a href="featuredetail.html"><h4 class="mb-0">Drag & Drop Functionality</h4></a>
+                <p class="mb-0">Enhance user experience with intuitive drag & drop functionality for easy content management and seamless workflow adjustments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 mb-4" id="fe5">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+              <div class="icon-circle" id="fecol5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex flex-column">
+                <a href="featuredetail.html"><h4 class="mb-0">Deadline Reminders</h4></a>
+                <p class="mb-0">Never miss a deadline with automated reminders that keep your projects on track and timely.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hosting-section">
+    <div class="container mt-5">
+      <div class="row justify-content-around align-items-center">
+        <div class="col-lg-7 mt-5">
+          <h1 class="text-lg text-sm">Cloud Hosting Services</h1>
+          <div class="progress-bar-container mt-2">
+            <div class="section-title"><div class="bar"></div></div>
+          </div>
+          <p class="text-lg mt-2">Discover reliable, scalable, and secure cloud hosting services tailored to your needs. Enjoy seamless performance and top-notch support with our solutions.</p> 
+          <div class="row justify-content-between" style="margin-left: 0.5%;">
+            <div class="col-lg-5 mt-2 mb-2" id="shadow">
+              <div class="d-flex align-items-center">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+                <p class="makr mb-0">Cloud databases</p>
+              </div>
+            </div>
+          <div class="col-lg-5 mt-2 mb-2" id="shadow">
+            <div class="d-flex align-items-center">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <p class="makr mb-0">Website hosting</p></div>
+          </div>
+          </div>
+          <div class="row justify-content-between" style="margin-left: 0.5%;">
+            <div class="col-lg-5 mt-2 mb-2" id="shadow">
+              <div class="d-flex align-items-center">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+              <p class="makr mb-0">File storage</p></div>
+            </div>
+            <div class="col-lg-5 mt-2 mb-2" id="shadow">
+              <div class="d-flex align-items-center">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+              <p class="makr mb-0">Forex trading</p></div>
+            </div>
+          </div>
+          <div class="row justify-content-between" style="margin-left: 0.5%;">
+            <div class="col-lg-5 mt-2 mb-2" id="shadow">
+              <div class="d-flex align-items-center">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+             <p class="makr mb-0">File backups</p></div>
+            </div>
+            <div class="col-lg-5 mt-2 mb-2" id="shadow">
+              <div class="d-flex align-items-center">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+             <p class="makr mb-0"> Remote desktop</p></div>
+            </div>
+          </div>
+          <div class="row justify-content-between" style="margin-left: 0.5%;">
+            <div class="col-lg-5 mt-2 mb-4" id="shadow">
+              <div class="d-flex align-items-center">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <p class="makr mb-0">Email servers</p></div>
+            </div>
+            <div class="col-lg-5  mt-2 mb-4" id="shadow">
+              <div class="d-flex align-items-center">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              <p class="makr mb-0">Hybrid cloud</p> 
+          </div>
+            </div>
+          </div>     
+        </div>
+        <div class="col mt-3" id="hhhhhhhhhh">
+          <div class="rotating-container mt-5 mb-5 d-flex align-items-center">
+            <img src="./Assets/INDEX/cercle-shape.47fe8b0d.png" alt="Outer Rotating Image" class="img-fluid rotating-image">
+            <div class="inner-container">
+              <img src="./Assets/INDEX/service-right-main-pic.30fff806.png" alt="Static Image" class="img-fluid static-image">
+            </div>
+          </div>
+        </div>
+        <div class="text-center mb-3" id="hhhhh">
+          <div class="">
+            <img src="./Assets/INDEX/service-right-main-pic.30fff806.png" alt="Static Image" class="img-fluid static-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="design">
+    <div class="container">
+      <div class="row">
+        <div class="text-center mt-3" id="hhhhh">
+          <div class="">
+            <img src="./Assets/INDEX/service-left-main-pic.62057aa2.png" alt="Static Image" class="img-fluid static-image">
+          </div>
+        </div>
+        <div class="col mt-3" id="hhhhhhhhhh">
+          <div class="rotating-container mt-5 mb-2 d-flex align-items-center">
+            <img src="./Assets/INDEX/cercle-shape.47fe8b0d.png" alt="Outer Rotating Image" class="img-fluid rotating-image">
+            <div class="inner-container">
+              <img src="./Assets/INDEX/service-left-main-pic.62057aa2.png" alt="Static Image" class="img-fluid static-image">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col mt-5">
+              <h1 class="text-lg text-sm">Design & Development</h1>
+              <div class="progress-bar-container mt-2">
+                <div class="section-title"><div class="bar"></div></div>
+              </div>
+              <p class="text-lg mt-2">Explore cutting-edge design and robust development solutions tailored to elevate your digital presence. Unleash your vision with our expertise and creativity.</p> 
+              <div class="row justify-content-between" style="margin-left: 0.5%;">
+                <div class="col-lg-5 mt-2 mb-2" id="shadow">
+                  <div class="d-flex align-items-center">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                    <p class="makr">Responsive design</p>
+                  </div>
+                </div>
+                <div class="col-lg-5 mt-2 mb-2" id="shadow">
+                  <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    <p class="makr">React web development</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between" style="margin-left: 0.5%;">
+                <div class="col-lg-5 mt-2 mb-2" id="shadow">
+                  <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    <p class="makr" style="font-size: 17px;">Android apps development</p>
+                  </div>
+                </div>
+                <div class="col-lg-5 mt-2 mb-2" id="shadow">
+                  <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    <p class="makr">Laravel web development</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between" style="margin-left: 0.5%;">
+                <div class="col-lg-5 mt-2 mb-2" id="shadow">
+                  <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    <p class="makr">iOS apps development</p>
+                  </div>
+                </div>
+                <div class="col-lg-5 mt-2 mb-2" id="shadow">
+                  <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg>
+                    <p class="makr">UX/UI design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between" style="margin-left: 0.5%;">
+                <div class="col-lg-5 mt-2 mb-4" id="shadow">
+                  <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <p class="makr" style="font-size: 17px;">E-commerce development</p>
+                  </div>
+                </div>
+                <div class="col-lg-5 mt-2 mb-4" id="shadow">
+                  <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    <p class="makr">Print ready design</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer-logo">
+            <img src="./Assets/INDEX/logo.png" alt="Logo">
+          </div>
+          <p class="footer-text">
+            Welcome to StartP, your dedicated IT consulting partner. We specialize in tailored solutions that enhance efficiency and drive growth. Partner with us to navigate the digital landscape effectively.
+          </p>
+        </div>
+        <div class="col-md-2 footer-col">
+          <h5 class="footer-title">Company</h5>
+          <div class="footer-link">
+             <a href="about.html">About Us</a>
+            <a href="#">Services</a>
+            <a href="feature.html">Features</a>
+            <a href="pricing.html">Our Pricing</a>
+            <a href="blogdetails.html">Latest News</a>
+          </div>
+        </div>
+        <div class="col-md-2 footer-col">
+          <h5 class="footer-title">Support</h5>
+          <div class="footer-link">
+            <a href="faq.html">FAQ's</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="term.html">Terms & Conditions</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h5 class="footer-title">Address</h5>
+          <p>
+            27 Division St, New York, NY 10002, USA <br>
+            Email: <a href="mailto: startp@gmail.com">startp@gmail.com</a> <br>
+              Phone:<a href="tel:+321984754"> + (321) 984 754</a>
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://x.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        Copyright © 2024 StartP. All rights reserved by StartP
+      </div>
+    </div>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">
+    <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+       viewBox="0 0 32 32" xml:space="preserve">
+  <path class="st0" d="M16,4l-8.3,8.3C7.1,12.9,7.5,14,8.4,14H13v13c0,0.6,0.4,1,1,1h4c0.6,0,1-0.4,1-1V14h4.6c0.9,0,1.3-1.1,0.7-1.7
+      L16,4z"/>
+  </svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="./script/script.js"></script>
+</body>
+</html>

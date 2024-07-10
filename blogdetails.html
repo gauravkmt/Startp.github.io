@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="./Assets/INDEX/tissue.b798041d.png">
+    <link rel="stylesheet" href="./css/style1.css">
+    <title>Blog Details</title>
+    <style>
+.date-author {display: flex;align-items: center;font-size: 1rem;color: #666;}
+.date-author svg {width: 1rem;height: 1rem;margin-right: 5px;color: #9b59b6;}
+.date-author .date {display: flex;align-items: center;margin-right: 10px;}
+.date-author .author {display: flex;align-items: center;}
+.date-author .separator {margin: 0 5px;color: #2ecc71;}
+.quote-box {position: relative;background-color: #f9f9f9;padding: 20px 20px;border-radius: 5px;font-style: italic;font-size: 1.2rem;color: #2c3e50;}
+.quote-box::before {content: '';position: absolute;left: 0;top: 0;bottom: 0;width: 5px;background-color: #44ce6f; border-radius: 5px 0 0 5px;}
+.custom-list {list-style: none;padding-left: 1.5em;}
+.custom-list li {position: relative;padding-left: 2em;margin-bottom: 0.5em;}
+.custom-list li::before {content: '';position: absolute;left: 0;top: 0.2em; width: 3em;height: 1em;background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-check" viewBox="0 0 16 16"><path d="M10.97 4.97a.75.75 0 011.07 1.05l-5 6a.75.75 0 01-1.08.02L4.324 9.384a.75.75 0 111.052-1.07l1.683 1.677 4.012-4.993z"/></svg>');background-size: contain;background-repeat: no-repeat;}
+.ms-3 a{color: #000;}
+.me-3 a{color: #000;}
+.align-items-center:hover a{color: #44ce6f;}
+.comment {display: flex;align-items: flex-start;margin-bottom: 20px;}
+.comment img {width: 50px;height: 50px;border-radius: 50%;margin-right: 15px;}
+.comment-body {flex: 1;}
+.comment-body h5 {margin: 0;font-size: 1rem;font-weight: bold;}
+.comment-body .comment-date {font-size: 0.875rem;color: #6c757d;}
+.comment-body p {margin: 10px 0;}
+.btn4 {font-size: 12px;letter-spacing: 2px;text-transform: uppercase;display: inline-block;text-align: center;font-family: 'Open Sans', sans-serif;padding: 0.7em 2em; border:1px solid #44ce6f;border-radius: 50px;position: relative;color: #44ce6f;text-decoration: none;transition: 0.3s ease all;z-index: 1;overflow: hidden;}
+.btn4:before {transition: 0.5s all ease;position: absolute;top: 0;left: 50%;right: 50%;bottom: 0;opacity: 0;content: '';background-color: #44ce6f;z-index: -1;}
+.btn4:hover, .btn4:focus {color: white;}
+.btn4:hover:before, .btn4:focus:before {left: 0;right: 0;opacity: 1;}
+.btn4:active {transform: scale(0.95);}
+.mb-0 a{text-decoration: none; color:rgb(14, 19, 82);}
+.mb-0 a:hover{color: #44ce6f;}
+h2{font:45px open sans}
+p{font:18px open sans}
+.form-check-input:checked {background-color: #28a745;border-color: #28a745;}
+    </style>
+</head>
+<body>
+<!-- navbar start here -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./Assets/INDEX/logo.png" alt="logo" class="img-fluid"></a>
+      <div class="d-lg-none d-lg-flex ms-auto align-items-center">
+        <a class="nav-link cart-icon me-2" id="cardico" href="#"><i class="bi bi-cart"></i><span class="badge bg-danger">0</span></a>
+        <a class="btn2 nav-link me-2" href="login.html">Login</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">Features</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="feature.html">Features</a></li>
+                  <li><a class="dropdown-item" href="featuredetail.html">Features Details</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="service.html">Services Style </a></li>
+                  <li><a class="dropdown-item" href="servicedetail.html">Services Details</a></li>
+                </ul>
+              </li>
+              
+               
+              <li><a class="dropdown-item" href="team.html">Team</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">User</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                  <li><a class="dropdown-item" href="Forgot.html">Forgot Password</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+              <li><a class="dropdown-item" href="coming.html">Coming soon</a></li>
+              <li><a class="dropdown-item" href="404.html">404 Error Page</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+              <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bloggrid.html">Blog Grid</a></li>
+              <li><a class="dropdown-item" href="rightsidebar.html">Blog Right Sidebar</a></li>
+              <li><a class="dropdown-item" href="bloggrid2.html">Blog Grid 2</a></li>
+              <li><a class="dropdown-item" href="rightsidebar2.html">Blog Right Sidebar 2</a></li>
+              <li><a class="dropdown-item" href="blogdetails.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item hideicon">
+            <a class="nav-link cart-icon me-2" href="#"><i class="bi bi-cart"></i><span class="badge bg-danger">0</span></a>
+          </li>
+        </ul>
+        <div class="d-lg-flex d-none align-items-center">
+          <a class="btn2 nav-link me-2" href="contact.html">Support</a>
+          <a class="btn2 nav-link" href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends here here -->
+  <div class="container" id="cont">
+    <div class="head">
+        <span>Blog Details</span>
+    </div>
+  </div>      
+  <section class="details mt-5">
+            <div class="container mt-3">
+                <div class="row">
+                    <!--first coloumn start here-->
+                    <div class="col-lg-8 col-md-12">
+                        <img src="./Assets/INDEX/blog1.9ce379ec.jpg" alt="" class="img-fluid">
+                        <div class="row mt-2">
+                            <div class="date-author">
+                                <div class="date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                                      </svg>
+                                    <span>September 31, 2022</span>
+                                </div>
+                                <span class="separator">-</span>
+                                <div class="author">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                      </svg>
+                                    <span><a href="" class="text-decoration-none text-muted">Steven Smith</a></span>
+                                </div>
+                            </div>
+                        </div>
+                          <h2 class="mt-2">The security risks of changing package owners</h2>  
+                          <p class="text-muted">
+                            Changing package owners poses significant security risks, including unauthorized access to sensitive data, potential introduction of malicious code, and disruption of package integrity. It can also lead to trust issues within the development community if the new owner has a history of questionable practices. Ensuring a secure transfer process and thoroughly vetting new owners are crucial steps to mitigate these risks and maintain package security and reliability.
+                          </p>
+                          
+                            <div class="row">
+                                <div class="col">
+                                    <div class="quote-box">
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <p class="text-muted">
+                                        Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-4 col-md-4 col-sm-4 mt-2 mb-2">
+                                    <img src="./Assets/INDEX/blog7.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 mt-2 mb-2">
+                                    <img src="./Assets/INDEX/blog8.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 mt-2 mb-2">
+                                    <img src="./Assets/INDEX/blog9.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h2 class="mt-3">Four major elements that we offer:</h2>
+                            </div>
+                            <div class="row">
+                                <ul class="custom-list">
+                                    <li class="text-muted">Scientific Skills For getting a better result</li>
+                                    <li class="text-muted">Communication Skills to getting in touch</li>
+                                    <li class="text-muted">A Career Overview opportunity Available</li>
+                                    <li class="text-muted">A Career Overview opportunity Available</li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <h2 class="mt-3">Setting the mood with incense</h2>
+                                <div class="col">
+                                    <p class="text-muted">
+                                        Setting the mood with incense can transform any space into a tranquil and inviting environment. The aromatic smoke from incense sticks or cones not only enhances the atmosphere but also promotes relaxation and mindfulness. Choose scents like lavender or sandalwood for a calming effect, or citrus and jasmine for an invigorating ambiance. Light the incense, let the fragrant smoke fill the room, and enjoy the soothing experience it brings.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="row">
+                                <h2 class="mt-3">The Rise Of Smarketing And Why You Need It</h2>
+                                <div class="col">
+                                    <p class="text-muted">
+                                        Smarketing, the integration of sales and marketing, boosts alignment, efficiency, and revenue. By combining efforts, businesses achieve seamless customer journeys, improved communication, and a unified strategy for success.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                   <a href="#"><button class="btn5 mt-2 mb-2">Fashion</button></a>
+                                   <a href="#"><button class="btn5 mt-2 mb-2">Smart</button></a>
+                                   <a href="#"><button class="btn5 mt-2 mb-2">Marketing</button></a>
+                                   <a href="#"><button class="btn5 mt-2 mb-2">Games</button></a>
+                                   <a href="#"><button class="btn5 mt-2 mb-2">Travel</button></a>
+                                </div> 
+                            </div>
+                            <hr>
+                            <div class="row justify-content-between">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./Assets/INDEX/blog7.jpg" alt="" class="img-fluid rounded" style="width: 200px; height: 100px; object-fit: cover;">
+                                        <div class="ms-3">
+                                            <a href="#" class="text-decoration-none"><h6>Don't buy a tech gift until you read these rules</h6></a>
+                                            <p class="text-muted">January 21, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3">
+                                            <a href="#" class="text-decoration-none"><h6>The golden rule of buying a phone as a gift</h6></a>
+                                            <p class="text-muted">January 21, 2022</p>
+                                        </div>
+                                        <img src="./Assets/INDEX/blog8.jpg" alt="" class="img-fluid rounded" style="width: 200px; height: 100px; object-fit: cover;">
+                                    </div>
+                                </div>
+                                 
+                            </div>
+                            <hr>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="comment">
+                                        <img src="./Assets/INDEX/team1.295605da.jpg" alt="Avatar">
+                                        <div class="comment-body">
+                                          <h5>John Jones</h5>
+                                          <div class="comment-date">April 24, 2019 at 10:59 AM</div>
+                                          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                          <a href="#"><button class="btn4">Reply</button></a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="comment">
+                                            <img src="./Assets/INDEX/team2.4941b382.jpg" alt="Avatar">
+                                            <div class="comment-body">
+                                              <h5>Steven Smith</h5>
+                                              <div class="comment-date">APRIL 24, 2019 AT 10:59 AM</div>
+                                              <p class=" text-muted">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                              <a href="#"><button class="btn4">Reply</button></a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div><hr>
+                            <div class="container mx-3">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="comment">
+                                            <img src="./Assets/INDEX/team3.ddbf6774.jpg" alt="Avatar">
+                                            <div class="comment-body">
+                                              <h5>Sarah Taylor</h5>
+                                              <div class="comment-date text-muted">APRIL 24, 2019 AT 10:59 AM</div>
+                                              <p class=" text-muted">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                              <a href="#"><button class="btn4">Reply</button></a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div><hr>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="comment">
+                                        <img src="./Assets/INDEX/team4.cdf721fb.jpg" alt="Avatar">
+                                        <div class="comment-body">
+                                          <h5>John Doe</h5>
+                                          <div class="comment-date">April 24, 2019 at 10:59 AM</div>
+                                          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                          <a href="#"><button class="btn4">Reply</button></a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="comment">
+                                            <img src="./Assets/INDEX/team5.c4dfbe7f.jpg" alt="Avatar">
+                                            <div class="comment-body">
+                                              <h5>James Anderson</h5>
+                                              <div class="comment-date">APRIL 24, 2019 AT 10:59 AM</div>
+                                              <p class=" text-muted">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                              <a href="#"><button class="btn4">Reply</button></a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div><hr>
+                            <div class="row">
+                                <h2>Leave a Reply</h2>
+                                <p class="text-muted">Your email address will not be published.Required fields are marked <sup class="text-danger">*</sup></p>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h6>Comment</h6>
+                                    <textarea class="form-control" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col">
+                                    <h6>Name<sup class="text-danger">*</sup></h6>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <h6>Email<sup class="text-danger">*</sup></h6>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col">
+                                    <h6>Website</h6>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="me-2 form-check-input">
+                                        <p class="text-muted mb-0">Save my name, email, and website in this browser for the next time I comment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2 mb-4">
+                                <div class="col">
+                                <button class="btn1">POST COMMENT</button></div>
+                            </div>
+                    </div>
+                
+<!--first coloumn ends here-->
+<!--second coloumn start here-->
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12" id="shad">
+                                <div class="search-bar">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <button type="button" class="btn">
+                                      <i class="bi bi-search"></i>
+                                    </button>
+                            </div>
+                        </div>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                            <div class="popular-posts">
+                                <h2 class="mb-4">Popular Posts</h2>
+                                <hr class="custom-hr">
+                                <div class="post-item">
+                                    <img src="./Assets/INDEX/blog7.jpg" alt="Post Image 1">
+                                    <div class="post-content">
+                                        <div class="post-date">June 10, 2022</div>
+                                        <div class="post-title"><a href="/">Making Peace With The Feast Or Famine Of Freelancing</a></div>
+                                    </div>
+                                </div>
+                                <div class="post-item">
+                                    <img src="./Assets/INDEX/blog8.jpg" alt="Post Image 2">
+                                    <div class="post-content">
+                                        <div class="post-date">June 21, 2022</div>
+                                        <div class="post-title"><a href="/">I Used The Web For A Day On A 50 MB Budget</a></div>
+                                    </div>
+                                </div>
+                                <div class="post-item">
+                                    <img src="./Assets/INDEX/blog9.jpg" alt="Post Image 3">
+                                    <div class="post-content">
+                                        <div class="post-date">June 30, 2022</div>
+                                        <div class="post-title"><a href="/">How To Create A Responsive Popup Gallery?</a></div>
+                                    </div>
+                                </div>
+                            </div></div>
+                        </div>
+                        </div>
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col-lg-12">
+                            <h2>Categories</h2>
+                            <hr class="custom-hr">
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <div class="small-box"></div>
+                                    <p class="mb-0"><a href="bloggrid.html">Business</a></p>
+                                </li>
+                                <li class="category-item">
+                                    <div class="small-box"></div>
+                                    <p class="mb-0"><a href="bloggrid.html">Privacy</a></p>
+                                </li>
+                                <li class="category-item">
+                                    <div class="small-box"></div>
+                                    <p class="mb-0"><a href="bloggrid.html">Technology</a></p>
+                                </li>
+                                <li class="category-item">
+                                    <div class="small-box"></div>
+                                    <p class="mb-0"><a href="bloggrid.html">Tips</a></p>
+                                </li>
+                                <li class="category-item">
+                                    <div class="small-box"></div>
+                                    <p class="mb-0"><a href="bloggrid.html">Uncategorized</a></p>
+                                </li>
+                            </ul>
+                        </div></div></div>
+
+                        <div class="container mt-5">
+                            <div class="row">
+                            <div class="col-lg-12">
+                            <h2>Tags</h2>
+                            <hr class="custom-hr">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="bloggrid.html"><button class="btn5 mt-2 mb-2">IT(3)</button></a>
+                                   <a href="bloggrid.html"><button class="btn5 mt-2 mb-2">Spacle(3)</button></a>
+                                   <a href="bloggrid.html"><button class="btn5 mt-2 mb-2">Games(2)</button></a>
+                                   <a href="bloggrid.html"><button class="btn5 mt-2 mb-2">Tips(2)</button></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="bloggrid.html"><button class="btn5 mt-2 mb-2">Fashion(2)</button></a>
+                                   <a href="bloggrid.html"><button class="btn5 mt-2 mb-2">Travel(1)</button></a>
+                                   <a href="bloggrid.html"><button class="btn5 mt-2 mb-2">Smart(1)</button></a>
+                                   <a href="bloggrid.html"><button class="btn5 mt-2 mb-2">Marketing(1)</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+                    </div>
+                      <!--second coloumn ends here-->
+                </div>
+            </div>
+        </section>
+    <footer class="footer mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 footer-col">
+              <div class="footer-logo">
+                <img src="./Assets/INDEX/logo.png" alt="Logo">
+              </div>
+              <p class="footer-text">
+                Welcome to StartP, your dedicated IT consulting partner. We specialize in tailored solutions that enhance efficiency and drive growth. Partner with us to navigate the digital landscape effectively.
+              </p>
+            </div>
+            <div class="col-md-2 footer-col">
+              <h5 class="footer-title">Company</h5>
+              <div class="footer-link">
+                 <a href="about.html">About Us</a>
+                <a href="#">Services</a>
+                <a href="feature.html">Features</a>
+                <a href="pricing.html">Our Pricing</a>
+                <a href="blogdetails.html">Latest News</a>
+              </div>
+            </div>
+            <div class="col-md-2 footer-col">
+              <h5 class="footer-title">Support</h5>
+              <div class="footer-link">
+                <a href="faq.html">FAQ's</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="term.html">Terms & Conditions</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </div>
+            <div class="col-md-4 footer-col">
+              <h5 class="footer-title">Address</h5>
+              <p>
+                27 Division St, New York, NY 10002, USA <br>
+                Email: <a href="mailto: startp@gmail.com">startp@gmail.com</a> <br>
+                  Phone:<a href="tel:+321984754"> + (321) 984 754</a>
+                </p>
+                <div class="footer-social">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://x.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom text-center">
+            Copyright © 2024 StartP. All rights reserved by StartP
+          </div>
+        </div>
+      </footer>
+      <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">
+        <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+           viewBox="0 0 32 32" xml:space="preserve">
+      <path class="st0" d="M16,4l-8.3,8.3C7.1,12.9,7.5,14,8.4,14H13v13c0,0.6,0.4,1,1,1h4c0.6,0,1-0.4,1-1V14h4.6c0.9,0,1.3-1.1,0.7-1.7
+          L16,4z"/>
+      </svg>
+      </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

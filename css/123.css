@@ -1,0 +1,127 @@
+/*navbar css start here */
+.d-lg-flex .btn2 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif; 
+    padding: 0.7em 2em;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    border: 1px solid #46cf71;
+    color: #c679e3;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .d-lg-flex .btn2:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #44ce6f;
+    z-index: -1;
+  }
+  .d-lg-flex a:hover,
+  .d-lg-flex a:focus {
+    color: #fff !important;
+  }
+  .d-lg-flex .btn2:hover:before,
+  .d-lg-flex .nav-item .btn2:focus:before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  .cart-icon {
+    position: relative;
+  }
+  .cart-icon .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+  }
+  .d-lg-none.d-lg-flex {
+    gap: 10px;
+    padding: 3px;
+  }
+  @media (max-width: 991.98px) {
+    .d-lg-none.d-lg-flex {
+      display: flex !important;
+    }
+  }
+  .hideicon {
+    display: block;
+  }
+  @media (max-width: 991.98px) {
+    .hideicon {
+      display: none !important;
+    }
+  }
+  @media (max-width: 341px) {
+    #cardico {
+      display: none !important;
+    }
+  }
+  .dropdown-submenu {
+    position: relative;
+  }
+  .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+  }
+  .dropdown a:hover{color: #46cf71;}
+  .nav-item .nav-link:hover{color: #46cf71;}
+  /*navbar css ends here*/
+/*footer css start here*/
+.footer {background-color: #f8f9fa;padding: 40px 0;background-image: url('../Assets/INDEX/map.png'); background-position: center; background-repeat: no-repeat;}
+.footer .footer-logo {display: flex;align-items: center;margin-bottom: 20px;}
+.footer .footer-logo img { max-width: 100px;margin-right: 10px;}
+.footer .footer-logo h2 {margin: 0;font-size: 24px;font-weight: bold;}
+.footer .footer-text {margin-bottom: 20px;color: #6c757d;}
+.footer .footer-col {margin-bottom: 20px;}
+.footer .footer-title {font-weight: bold;margin-bottom: 10px;}
+.footer .footer-link a {display: block;color: #6c757d;margin-bottom: 5px;text-decoration: none;}
+.footer .footer-link a:hover {color:#44ce6f;}
+.footer .footer-social a {margin-right: 10px;color: #6c757d;text-decoration: none;}
+.footer a{text-decoration: none; color:black;}
+.footer a:hover{color: #44ce6f;}
+.footer .footer-social a:hover {color: #44ce6f;}
+.footer .footer-bottom {border-top: 1px solid #e9ecef;padding-top: 20px;margin-top: 20px;color: #6c757d;}
+/*footer css ends here*/
+/*scroll button css start here*/
+#scrollBtn {display: none;position: fixed;bottom: 20px;right: 30px;background-color: rgb(198, 121, 227);color: #fff;border: none;border-radius: 50%;width: 50px;height: 50px;cursor: pointer;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);transition: opacity 0.3s visibility 0.3s; transition: background 0.4s ease;}
+#scrollBtn svg {fill: #fff;width: 24px;height: 24px;}
+#scrollBtn:hover {background-color: rgb(68, 206, 111);}
+@media screen and (max-width: 768px) {#scrollBtn {bottom: 10px;right: 20px;}}
+/*scroll button css ends here*/
+/*section name css start here*/
+#cont{position: relative;max-width: 100%;height: 400px;background: url("../Assets/INDEX/banner-bg1.jpg");background-size: cover;background-position: center;}
+.head{position: absolute;top: 50%;left: 50%; transform: translate(-50%, -50%);}
+.head h4 {font-size: 40px; font-family: 'Open Sans';}
+/*section name css ends here*/
+/**/
+    .accordion-item {box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);border-radius: 5px;margin-top: 15px;}
+    .accordion-item:first-of-type {margin-top: 0;}
+    .accordion-button {background-color: #f8f9fa;color: #000;border: none;}
+    .accordion-button:not(.collapsed) {background-color: #f8f9fa;color: #000; box-shadow: none;}
+    .accordion-button:focus {box-shadow: none;border: none;outline: none;}
+    .desk{display: block;}
+    @media (max-width:991px) {.desk{display: none;}}
+    .mobi{display: none;}
+    @media (max-width:990px) {.mobi{display: block;}}
+    h2{font-size: 40px; font-family: open sans;}
+    .text-muted{font-size: 18px; font-family: open sans;}
+    h1{font-size: 50px; font-family: open sans;}
+    /**/
